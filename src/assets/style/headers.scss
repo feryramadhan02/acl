@@ -1,0 +1,30 @@
+@import '../style/variable.scss';
+
+.containers {
+    max-width: 1440px;
+    width: 100%;
+    position: fixed;
+    nav {
+        background: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        .navigation-logo {
+            img {
+                width: 8rem;
+                margin: 0;
+                padding: 10px;
+            }
+        }
+        .navigation-menu {
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    padding: 0 20px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
