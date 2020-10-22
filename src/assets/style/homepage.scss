@@ -18,7 +18,8 @@
         width: 25rem;
         p {
             margin: 0;
-            font-size: 25px;
+            font-size: 23px;
+            color: black;
             font-family: $font;
             margin-bottom: 5px;
         }
@@ -28,19 +29,18 @@
             margin-bottom: 20px;
             span {
                 font-weight: normal;
-                font-size: 25px;
+                font-size: 23px;
                 color: black;
             }
         }
         .btn-login {
             width: 100%;
-            padding: 10px;
             background: $primary-color;
             font-size: 15px;
             font-weight: bold;
             color: #ffffff;
             border-radius: 2rem;
-            box-shadow: 2px 2px 2px #815959;
+            box-shadow: 2px 3px 5px #6e6e6e;
         }
     }
 }

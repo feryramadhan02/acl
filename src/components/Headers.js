@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 import '../assets/style/headers.scss';
 
@@ -11,8 +12,8 @@ const Headers = () => {
                 </div>
                 <div className="navigation-menu">
                     <ul>
-                        <li>Login</li>
-                        <li>Register</li>
+                        <li><Button className="btn">Login</Button></li>
+                        <li><Button className="btn">Register</Button></li>
                     </ul>
                 </div>
             </nav>

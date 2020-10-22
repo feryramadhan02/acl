@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Button from 'react-bootstrap/Button';
 
 import '../assets/style/homepage.scss';
 
@@ -14,7 +15,7 @@ const HomePage = () => {
                     without large national capital, providing a wide variety of products
                     </p>
                     <p className="interest">Are you interested ? <span>Join Now !</span> </p>
-                    <button className="btn-login">Login</button>
+                    <Button className="btn-login">Login</Button>
                 </div>
             </div>
         </Fragment>
