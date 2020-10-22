@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <Login />
       {/* <Daftar /> */}
+      <h1>gsghsg</h1>
     </div>
   );
 }
