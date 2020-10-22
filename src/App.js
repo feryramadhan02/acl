@@ -1,6 +1,6 @@
 import React from 'react';
-import Login from './Components/Login';
-import Navbar from './Components/Navbar';
+import LoginAdmin from './Components/LoginAdmin';
+
 import Daftar from './Components/Daftar';
 import './index.css';
 
@@ -9,9 +9,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Login />
+      <LoginAdmin />
       {/* <Daftar /> */}
-      <h1>gsghsg</h1>
     </div>
   );
 }

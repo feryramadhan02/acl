@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const Login = () => {
+const LoginAdmin = () => {
     const [username,setUsername] = useState('');
     const [password,setPassword] = useState('');
 
@@ -9,11 +9,13 @@ const Login = () => {
         const value = e.target.value;
         setUsername(value)
     }
-
+    
     const onChangePassword = (e) => {
         const value = e.target.value;
         setPassword(value)
     }
+
+
 
     return (
         <div  style={{marginTop: "120px"}}>
@@ -33,12 +35,6 @@ const Login = () => {
                                     <label>Password</label>
                                     <input type="password" placeholder="Password" className="form-control" value={password} onChange={onChangePassword} />
                                 </div>
-                                <select class="form-control">
-                                    
-                                    <option>Admin</option>
-                                    <option>CS</option>
-                                    <option>Finance</option>
-                                </select>
                                 <div class="form-group form-check">
                                     <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                                     <label className="form-check-label" for="exampleCheck1">Check me out</label>
@@ -58,4 +54,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default LoginAdmin;
