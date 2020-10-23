@@ -6,6 +6,7 @@ import '../assets/style/adminpage.scss';
 
 const AdminPage = () => {
     const [userData, setUserData] = useState({
+        id: 1,
         nama: "",
         email: "",
         role: ""
@@ -45,14 +46,20 @@ const AdminPage = () => {
         })
     }
 
-    const addData = (e) => {
+    const addUser = (e) => {
         e.preventDefault()
         setDt(dt.concat(userData))
         setUserData({
+            id: null,
             nama: "",
             email: "",
             role: ""
         })
+    }
+
+    const deleteUser = (id) => {
+        console.log('del')
+
     }
 
     return (
@@ -60,7 +67,7 @@ const AdminPage = () => {
             <div className="admin">
                 <h2>Welcome Admin</h2>
                 <div className="form-data">
-                    <Form onSubmit={addData}>
+                    <Form onSubmit={addUser}>
                         <Form.Group controlId="formBasicText">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" id="nama" value={userData.nama} onChange={handleInput} placeholder="Enter Name" />
