@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Daftar = () => {
     const[username,setUsername] = useState('');
@@ -21,15 +22,15 @@ const Daftar = () => {
     }
 
     return (
-        <div style={{marginTop: "160px"}}>
+        <div style={{marginTop: "120px"}}>
             <div className="container">
             <div className="row justify-content-center" >
                     
                     <div className="kotak col-md-6" >
                         <div > 
-                            <h3 style={{marginTop: "8px"}} className="text-center">Register</h3>
-                            <div className="card-body ">
-                                <div className="form-group">
+                            <h3 style={{marginTop: "8px", fontFamily: "roboto"}} className="text-center">Register</h3>
+                            <div className="card-body tulisan">
+                                <div className="form-group ">
                                     <label>Username</label>
                                     <input type="text" placeholder="Username" className="form-control" value={username} onChange={changeUsername}/> 
                                 </div>
@@ -41,7 +42,14 @@ const Daftar = () => {
                                     <label>Password</label>
                                     <input type="password" placeholder="Password" className="form-control" value={password} onChange={changePassword}/>
                                 </div>
-                                <button type="button" class="btn btn-secondary btn-lg btn-block">Daftar</button>
+                                <button type="button" class="btn  btn-lg btn-block daftar">Daftar</button>
+                                <div className="text-center">
+                                <Link to="/" > 
+                                    Back to sign in 
+                                </Link>
+                                    </div>
+                                
+                                
                             </div>
                             
                         </div>

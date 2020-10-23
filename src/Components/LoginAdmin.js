@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
+
 const LoginAdmin = () => {
     const [username,setUsername] = useState('');
     const [password,setPassword] = useState('');
@@ -25,9 +26,9 @@ const LoginAdmin = () => {
                     
                     <div className="kotak col-md-6" >
                         <div > 
-                            <h3 style={{marginTop: "8px"}} className="text-center">Login</h3>
-                            <div className="card-body ">
-                                <div className="form-group">
+                            <h3 style={{marginTop: "8px", fontFamily: "roboto"}} className="text-center">Login</h3>
+                            <div className="card-body tulisan">
+                                <div className="form-group ">
                                     <label>Username</label>
                                     <input type="text" placeholder="Username" className="form-control" value={username} onChange={onChangeUsername} />
                                 </div>
@@ -50,7 +51,8 @@ const LoginAdmin = () => {
                                     </div>
                                 </div>
                                 
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn  login">Login</button>
+                                
                             </div>
                             
                         </div>
