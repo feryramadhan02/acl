@@ -6,10 +6,10 @@ import '../assets/style/adminpage.scss';
 
 const AdminPage = () => {
     const [userData, setUserData] = useState({
-        id: 1,
+        id: null,
         nama: "",
         email: "",
-        role: ""
+        role: "User"
     })
     const [dt, setDt] = useState([])
 
@@ -53,13 +53,15 @@ const AdminPage = () => {
             id: null,
             nama: "",
             email: "",
-            role: ""
+            role: "User"
         })
+        console.log(setUserData.id)
     }
 
     const deleteUser = (id) => {
-        console.log('del')
-
+        console.log('del', id)
+        alert('Are you sure ?')
+        setDt(dt.filter(userData => userData.id !== id))
     }
 
     return (
@@ -78,8 +80,14 @@ const AdminPage = () => {
                         </Form.Group>
                         <Form.Group controlId="formBasicText">
                             <Form.Label>Role</Form.Label>
-                            <Form.Control type="text" id="role" value={userData.role} onChange={handleInput} placeholder="Enter Role" />
+                            <Form.Control as="select" id="role" value={userData.role} onChange={handleInput}>
+                                <option>User</option>
+                                <option>Customer Service</option>
+                                <option>Finance</option>
+                                <option>Admin</option>
+                            </Form.Control>
                         </Form.Group>
+
                         <Button variant="primary" type="submit" className="add">Add</Button>
                     </Form>
                 </div>
@@ -102,8 +110,8 @@ const AdminPage = () => {
                 </div>
                 <div className="data">
                     {dt.map((data) => (
-                        <div className="data-user">
-                            <p>Nama : <span>{data.nama}</span><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <div key={data.id} className="data-user">
+                            <p>Nama : <span>{data.nama}</span><svg onClick={() => deleteUser(dt.id)} width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                 <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
                             </svg>
