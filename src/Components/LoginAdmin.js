@@ -29,8 +29,8 @@ const LoginAdmin = () => {
                             <h3 style={{marginTop: "8px", fontFamily: "roboto"}} className="text-center">Login</h3>
                             <div className="card-body tulisan">
                                 <div className="form-group ">
-                                    <label>Username</label>
-                                    <input type="text" placeholder="Username" className="form-control" value={username} onChange={onChangeUsername} />
+                                    <label>Username / Email</label>
+                                    <input type="text" placeholder="Username/Email" className="form-control" value={username} onChange={onChangeUsername} />
                                 </div>
                                 <div className="form-group">
                                     <label>Password</label>
