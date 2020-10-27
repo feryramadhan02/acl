@@ -9,15 +9,11 @@ import HomePage from "../page/HomePage";
 const Routes = () => {
     return (
         <div>
-        
-
-      
             <Switch>
                 <Route path="/" component={HomePage} exact />
-                <Route path="/admin" component={AdminPage} exact />
-                               
+                <Route path="/admin" component={AdminPage} exact />                  
             {/* memanggil component Login admin */} 
-        <Route  path="/" component={LoginAdmin} exact /> 
+        <Route  path="/login" component={LoginAdmin} exact /> 
             {/* memanggil component Daftar */}
         <Route path="/Daftar" component={Daftar} exact/>
         <Route path="/Finance" component={Dash} exact />
