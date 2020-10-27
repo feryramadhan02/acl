@@ -9,6 +9,7 @@ const Routes = () => {
             <Switch>
                 <Route path="/" component={HomePage} exact />
                 <Route path="/admin" component={AdminPage} exact />
+                <Route path="/finance" component={""} exact />
                 <Route component={() => "404 Not Found"} />
             </Switch>
         </div>
