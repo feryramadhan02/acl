@@ -1,0 +1,40 @@
+@import '../style/variable.scss';
+
+.admin {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 75px;
+    text-align: center;
+    .form-data {
+        margin: 0 20rem;
+        padding: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 0.5rem;
+        .add {
+            background: $primary-color;
+            width: 100%;
+            font-weight: 600;
+        }
+    }
+    .data {
+        margin-top: 30px;
+        padding: 0 100px;
+        .data-user {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid;
+            border-radius: 0.5rem;
+            p {
+                margin-bottom: 5px;
+                font-weight: 500;
+                text-align: left;
+                svg {
+                    margin-left: 15px;
+                }
+                svg:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
