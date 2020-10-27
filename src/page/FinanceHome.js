@@ -1,11 +1,11 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 import '../assets/style/adminpage.scss';
 
 
-const AdminPage = (props) => {
+const FinanceHome = (props) => {
     const userDummy = [
         {
             id: 1,
@@ -36,10 +36,6 @@ const AdminPage = (props) => {
     const [dt, setDt] = useState([])
 
 
-    // useEffect(() => {
-    //     setUserData([...dt])
-    // }, [dt])
-
 
     const handleInput = (e) => {
         setUserData({
@@ -59,10 +55,8 @@ const AdminPage = (props) => {
         })
     }
 
-    const deleteUser = (id) => {
-        alert('Are you sure ?')
-        setDt(dt.filter((user) => user.id !== id))
-        console.log('del', id)
+    const deleteUser = () => {
+        alert('Maaf anda tidak memiliki akses, silahkan hubungi admin!')
     }
 
 
@@ -76,7 +70,7 @@ const AdminPage = (props) => {
                 <>
                     {props.data.map((item) => (
                         <div>
-                            <h3>Welcome {item.nama} as Admin</h3>
+                            <h3>Welcome {item.nama} as Finance</h3>
                         </div>
                     ))}
                 </>
@@ -141,4 +135,4 @@ const AdminPage = (props) => {
     )
 }
 
-export default AdminPage;
+export default FinanceHome;

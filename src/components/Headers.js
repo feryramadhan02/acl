@@ -1,9 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 import '../assets/style/headers.scss';
-//-----------------------------Buat kondisi menu ul jika sudah login-------------------
+
 const Headers = () => {
     const history = useHistory();
 
@@ -19,8 +19,8 @@ const Headers = () => {
                 </div>
                 <div className="navigation-menu">
                     <ul>
-                        <li><Button className="btn">Login</Button></li>
-                        <li><Button className="btn">Register</Button></li>
+                        <li><Link to="Login"><Button className="btn">Login</Button></Link></li>
+                        <li><Link to="Daftar"><Button className="btn">Register</Button></Link></li>
                     </ul>
                 </div>
             </nav>
