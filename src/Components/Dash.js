@@ -1,58 +1,11 @@
 import React from "react";
 
 
-
 function Dash() {
   return (
     <div>
-      {/* <div className="row row-cols-1 row-cols-md-4 container row-cols-1 row-cols-md-2 justify-content-center">
-        
-
-          <div class="card text-white bg-dark mb-3"style={{ maxWidth: "240px", margin: "8px", boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)" }} >
-            <div class="card-header">Average Order Value</div>
-            <div class="card-body">
-              <h5 class="card-title">800.499 $</h5>
-              <img src={require('../asset/image/line-chart.svg')} />
-            </div>
-          </div>
-
-        
-
-        
-
-          <div class="card text-white bg-danger mb-3" style={{ maxWidth: "240px", margin: "8px", boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)"}}>
-            <div class="card-header">Convertion Rate</div>
-              <div class="card-body">
-                <h5 class="card-title">800.499 $</h5>
-                <img src={require('../asset/image/bar-chart.svg')} />
-              </div>
-          </div>
-        
-
-        
-
-          <div class="card text-white bg-secondary mb-3" style={{maxWidth: "240px", margin: "8px", boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)" }}>
-            <div class="card-header">Upsel take rate</div>
-            <div class="card-body">
-              <h5 class="card-title">800.499 $</h5>
-              <img src={require('../asset/image/bar-chart (1).svg')} />
-              
-            </div>
-          </div>
-
-          <div class="card text-white bg-Success mb-3" style={{maxWidth: "240px", margin: "8px", boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)" }}>
-            <div class="card-header">Upsel take rate</div>
-            <div class="card-body">
-              <h5 class="card-title">800.499 $</h5>
-              <img src={require('../asset/image/bar-chart (1).svg')} />
-              
-            </div>
-          </div>
-
-        
-        
-      </div> */}
-      <div className="container justify-content-center">
+      
+      <div className="container justify-content-center" style={{marginTop: "20px"}}>
         <div
           id="carouselExampleControls"
           class="carousel slide m-100"
@@ -62,19 +15,19 @@ function Dash() {
             <div class="carousel-item active">
               <img
                 src={require("../asset/image/kr.jpg")}
-                class="d-block w-100"
+                class="d-block w-100"alt=""
               />
             </div>
           </div>
           <div class="carousel-item">
             <img
               src={require("../asset/image/kr2.jpg")}
-              class="d-block w-100"
+              class="d-block w-100"alt=""
             />
           </div>
           <div class="carousel-item">
             <img src={require("../asset/image/kr3.jpg")}
-              class="d-block w-100"/>
+              class="d-block w-100"alt=""/>
           </div>
 
           <a
@@ -97,15 +50,15 @@ function Dash() {
           </a>
         </div>
 
-        <div
+         <div
           class="container card"
-          style={{ boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)" }}>
+          style={{ boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)", marginTop: "20px", marginBottom: "25px" }} >
           <div class="card-body p-6">
             <h2>Project of the Month</h2>
             <p>
               Overview of the Month
-              <img href="#" className="float-right" src={require("../asset/image/plus.svg")}role="button" aria-pressed="true"
-                style={{ maxWidth: "20px", marginRight: "150px" }}/></p>
+              <img  className="float-right" src={require("../asset/image/plus.svg")}role="button" aria-pressed="true"
+                style={{ maxWidth: "20px", marginRight: "150px" }} alt=""/></p>
             
 
             <table class="table table-hover">
@@ -165,6 +118,7 @@ function Dash() {
                       aria-expanded="false">
                       Action
                     </button>
+                    
                   </td>
                 </tr>
               </tbody>
@@ -172,7 +126,8 @@ function Dash() {
           </div>
         </div>
       </div>
-      <div class="container " style={{ maxWidth: "380px" }}>
+
+      {/* <div class="container " style={{ maxWidth: "380px" }}> */}
         
             
           {/* <div class="row justify-content-center" style={{ color: "white"}} >
@@ -195,7 +150,7 @@ function Dash() {
 
 
 
-      </div>
+      {/* </div> */}
   </div>
   );
 }

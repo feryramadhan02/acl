@@ -3,28 +3,21 @@ import React from 'react';
 // import Daftar from './Components/Daftar';
 // import { Route, Switch } from 'react-router-dom';
 import './index.css';
-import Dash from './Components/Dash';
-import Footer from './Components/Footer'
+// import Dash from './Components/Dash';
+// import Footer from './Components/Footer'
 
-import Nav from './Components/Nav'
-
-
+// import Nav from './Components/Nav'
+import Routes from '../src/router/Routes.js';
+import { BrowserRouter } from 'react-router-dom'; 
 
 function App() {
 
   return (
-    <div className="App">
-      <Nav/>
-      <Dash></Dash>
+    <div>
+      <BrowserRouter>
+      <Routes />
+      </BrowserRouter>
       
-      {/* <Switch> */}
-          {/* memanggil component Login admin */}
-        {/* <Route exact path="/" component={LoginAdmin} />  */}
-          {/* memanggil component Daftar */}
-        {/* <Route path="/Daftar" component={Daftar}/> */}
-      {/* </Switch> */}
-        
-      <Footer></Footer>
     </div>
   );
 }
