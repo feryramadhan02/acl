@@ -1,12 +1,60 @@
 import React from "react";
 
+import Mate from "../components/mate";
+import { Card, CardDeck, Pagination, Figure, Row } from "react-bootstrap";
 
 function Dash() {
   return (
     <div>
-      
-      <div className="container justify-content-center" style={{marginTop: "20px"}}>
-        <div
+      <div
+        className="container justify-content-center"
+        style={{ marginTop: "20px" }}
+      >
+        <Card body style={{ marginBottom: "20px" }}>
+          <Row container> 
+
+          <h2 style={{ float: "left" }}>Finance Profil.</h2>
+          <Figure.Image
+            
+            float="right"           
+            width={50}
+            height={50}
+            alt="171x180"
+            src={require("../asset/image/Mask Group.svg")}
+            roundedCircle />
+          </Row>
+        </Card>
+        <CardDeck>
+          <Card>
+            <Card.Img
+              variant="top"
+              src={require("../asset/image/chart gunung.svg")}
+            />
+            <Card.Body>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card className="justify-content-center" style={{ maxWidth: "30%" }}>
+            <Card.Img
+              variant="top"
+              src={require("../asset/image/graph-18.svg")}
+              style={{ maxWidth: "100%" }}
+            />
+            <Card.Body>
+              <Card.Title>Monthly Sales</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </CardDeck>
+        {/* <div
           id="carouselExampleControls"
           class="carousel slide m-100"
           data-ride="carousel"
@@ -48,18 +96,22 @@ function Dash() {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
+        </div> */}
 
-         <div
+        <div
           class="container card"
-          style={{ boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)", marginTop: "20px", marginBottom: "25px" }} >
+          style={{
+            boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)",
+            marginTop: "20px",
+            marginBottom: "25px",
+          }}
+        >
           <div class="card-body p-6">
             <h2>Project of the Month</h2>
             <p>
               Overview of the Month
-              <img  className="float-right" src={require("../asset/image/plus.svg")}role="button" aria-pressed="true"
-                style={{ maxWidth: "20px", marginRight: "150px" }} alt=""/></p>
-            
+              <Mate style={{ float: "right" }}></Mate>
+            </p>
 
             <table class="table table-hover">
               <thead>
@@ -83,7 +135,8 @@ function Dash() {
                       class="btn btn-danger dropdown-toggle"
                       data-toggle="dropdown"
                       aria-haspopup="true"
-                      aria-expanded="false">
+                      aria-expanded="false"
+                    >
                       Action
                     </button>
                   </td>
@@ -99,7 +152,8 @@ function Dash() {
                       class="btn btn-danger dropdown-toggle"
                       data-toggle="dropdown"
                       aria-haspopup="true"
-                      aria-expanded="false">
+                      aria-expanded="false"
+                    >
                       Action
                     </button>
                   </td>
@@ -115,22 +169,55 @@ function Dash() {
                       class="btn btn-danger dropdown-toggle"
                       data-toggle="dropdown"
                       aria-haspopup="true"
-                      aria-expanded="false">
+                      aria-expanded="false"
+                    >
                       Action
                     </button>
-                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Desain Ads</td>
+                  <td>15/10/2020</td>
+                  <td>17/10/2020</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-danger dropdown-toggle"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Action
+                    </button>
                   </td>
                 </tr>
               </tbody>
             </table>
+            <Pagination>
+              <Pagination.First />
+              <Pagination.Prev />
+              <Pagination.Item>{1}</Pagination.Item>
+              <Pagination.Ellipsis />
+
+              <Pagination.Item>{10}</Pagination.Item>
+              <Pagination.Item>{11}</Pagination.Item>
+              <Pagination.Item active>{12}</Pagination.Item>
+              <Pagination.Item>{13}</Pagination.Item>
+              <Pagination.Item disabled>{14}</Pagination.Item>
+
+              <Pagination.Ellipsis />
+              <Pagination.Item>{20}</Pagination.Item>
+              <Pagination.Next />
+              <Pagination.Last />
+            </Pagination>
           </div>
         </div>
       </div>
 
       {/* <div class="container " style={{ maxWidth: "380px" }}> */}
-        
-            
-          {/* <div class="row justify-content-center" style={{ color: "white"}} >
+
+      {/* <div class="row justify-content-center" style={{ color: "white"}} >
 
             
             <div class="col-12" style={{ backgroundColor: "#0278ae", margin: "2px",}}>
@@ -148,10 +235,8 @@ function Dash() {
               </div>
           </div> */}
 
-
-
       {/* </div> */}
-  </div>
+    </div>
   );
 }
 
