@@ -1,11 +1,11 @@
 import React from "react";
 
 
+
 function Dash() {
   return (
     <div>
-      
-      <div className="container justify-content-center" style={{marginTop: "20px"}}>
+      <div className="container justify-content-center" style={{ marginTop: "20px" }}>
         <div
           id="carouselExampleControls"
           class="carousel slide m-100"
@@ -15,19 +15,19 @@ function Dash() {
             <div class="carousel-item active">
               <img
                 src={require("../asset/image/kr.jpg")}
-                class="d-block w-100"alt=""
+                class="d-block w-100" alt=""
               />
             </div>
           </div>
           <div class="carousel-item">
             <img
               src={require("../asset/image/kr2.jpg")}
-              class="d-block w-100"alt=""
+              class="d-block w-100" alt=""
             />
           </div>
           <div class="carousel-item">
             <img src={require("../asset/image/kr3.jpg")}
-              class="d-block w-100"alt=""/>
+              class="d-block w-100" alt="" />
           </div>
 
           <a
@@ -50,16 +50,16 @@ function Dash() {
           </a>
         </div>
 
-         <div
+        <div
           class="container card"
           style={{ boxShadow: "-2px 2px 4px 6px rgba(107, 173, 173, 0.116)", marginTop: "20px", marginBottom: "25px" }} >
           <div class="card-body p-6">
             <h2>Project of the Month</h2>
             <p>
               Overview of the Month
-              <img  className="float-right" src={require("../asset/image/plus.svg")}role="button" aria-pressed="true"
-                style={{ maxWidth: "20px", marginRight: "150px" }} alt=""/></p>
-            
+              <img className="float-right" src={require("../asset/image/plus.svg")} role="button" aria-pressed="true"
+                style={{ maxWidth: "20px", marginRight: "150px" }} alt="" /></p>
+
 
             <table class="table table-hover">
               <thead>
@@ -118,7 +118,7 @@ function Dash() {
                       aria-expanded="false">
                       Action
                     </button>
-                    
+
                   </td>
                 </tr>
               </tbody>
@@ -128,9 +128,9 @@ function Dash() {
       </div>
 
       {/* <div class="container " style={{ maxWidth: "380px" }}> */}
-        
-            
-          {/* <div class="row justify-content-center" style={{ color: "white"}} >
+
+
+      {/* <div class="row justify-content-center" style={{ color: "white"}} >
 
             
             <div class="col-12" style={{ backgroundColor: "#0278ae", margin: "2px",}}>
@@ -151,7 +151,7 @@ function Dash() {
 
 
       {/* </div> */}
-  </div>
+    </div>
   );
 }
 
