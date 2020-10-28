@@ -12,7 +12,6 @@ const Daftar = (props) => {
         password: "",
         role: ""
     })
-    // const [role, setRole] = useState("")
 
     const handleInput = (e) => {
         setInput({
